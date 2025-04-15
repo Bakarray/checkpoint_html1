@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- charset meta specifies the character encoding for the browser to use for interpreting the html content -->
+    <meta charset="UTF-8">
+
+    <!-- viewport meta sets the rules for how the page should be displayed on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- description meta provides a short description of the page content to help search engines know what it contains -->
+    <meta name="description" content="A simple Portfolio page with html to demonstrate html knowledge">
+
+    <title>Portfolio page</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="./bird_logo.jpg" alt="bird_logo" width="auto" height="100px">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Abdulazeem's Portfolio</h1>
+        <p>Scroll through to know me and see the wonderful programs I have created</p>
+
+        <figure>
+            <audio controls loop>
+                <source src="./slowlife.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <figcaption>
+                Play music to keep you going. Source: <a href="https://www.bensound.com" target="_blank">bensound.com</a>
+                <br>
+            </figcaption>
+        </figure>
+        <hr>
+
+        <!-- about section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello I am Abdulazeem Bakare, I love to create things that work and I do that by making awesome software accessible to the wholeworld on the internet. That's why people call me a web developer</p>
+
+            <figure>
+                <img src="./dev_image.jpg" alt="illustration of a developer in his element" height="300px">
+                <figcaption>An illustration of me as a developer interacting with my code</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <!-- work section -->
+        <section id="work">
+            <h2>Work</h2>
+            <p>Have a look at some of the projects I've worked on</p>
+            
+            <div><!-- portfolio projects go here --></div>
+        </section>
+        <hr>
+
+        <!-- resume section -->
+        <section id="resume">
+            <h2>Resume</h2>
+
+            <p><b>Name:</b> Abdulazeem Opeyemi Bakare || <b>Email:</b> poesitor1@gmail.com</p>
+
+            <h3>Skills</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Programming Languages</th>
+                        <th>Tools and Frameworks</th>
+                        <th>Projects</th>
+                    </tr> 
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>C</td>
+                        <td>&mdash;</td>
+                        <td>
+                            <ul>
+                                <li>A simple shell</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>
+                            <ul type="square">
+                                <li>django &amp; DRF</li>
+                                <li>tkinter</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul type="square">
+                                <li>A simple Task manager app</li>
+                                <li>A book store api</li>
+                                <li>Structural analysis desktop application</li>
+                                <li>Restful API with DRF</li>
+                            </ul>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+
+            <h3>Education</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Degree</th>
+                        <th>Duration</th>
+                    </tr> 
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>University of Lagos</td>
+                        <td>Bsc. Civil engineering</td>
+                        <td>2016 - 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Gomycode</td>
+                        <td>Certified Software developer</td>
+                        <td>April 2025 - August 2025</td>
+                    </tr>  
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <!-- contact section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Drop a message for me and I'll get back to you</legend>
+
+                    <label>
+                        Name:
+                        <input type="text" name="name" placeholder="John Doe">
+                    </label>
+                    <br>
+                    <label>
+                        Email:
+                        <input type="email" name="email" placeholder="johndoe@example.com">
+                    </label>
+                    <br>
+                    <label>
+                        Message:
+                        <textarea name="message" cols="30" rows="10" placeholder="I want to create..."></textarea>
+                    </label>  
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        Looking foward to working with you &copy; Abdulazeem
+    </footer>
+</body>
+</html>
