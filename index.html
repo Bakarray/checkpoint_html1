@@ -10,16 +10,16 @@
     <!-- description meta provides a short description of the page content to help search engines know what it contains -->
     <meta name="description" content="A simple Portfolio page with html to demonstrate html knowledge">
 
-    <title>Portfolio page</title>
+    <title>Abdulazeem - Portfolio page</title>
 </head>
 <body>
-    <header>
+    <header id="top">
         <a href="#top">
             <img src="./bird_logo.jpg" alt="bird_logo" width="auto" height="100px">
         </a>
 
         <nav>
-            <ul>
+            <ul type="none">
                 <li><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
@@ -47,8 +47,8 @@
 
         <!-- about section -->
         <section id="about">
-            <h2>About</h2>
-            <p>Hello I am Abdulazeem Bakare, I love to create things that work and I do that by making awesome software accessible to the wholeworld on the internet. That's why people call me a web developer</p>
+            <h2>About Me</h2>
+            <p>Hello I am Abdulazeem Bakare, I love to create things that work, and I do that by making awesome software accessible to the wholeworld on the internet. That's why people call me a web developer</p>
 
             <figure>
                 <img src="./dev_image.jpg" alt="illustration of a developer in his element" height="300px">
@@ -67,11 +67,15 @@
         <hr>
 
         <!-- resume section -->
-        <section id="resume">
-            <h2>Resume</h2>
-
-            <p><b>Name:</b> Abdulazeem Opeyemi Bakare || <b>Email:</b> poesitor1@gmail.com</p>
-
+        <article id="resume">
+            <header>
+                <h1>Resume</h1>
+                <address>
+                    Name: Abdulazeem Opeyemi Bakare <br>
+                    Email: <a href="mailto:pesitor1@gmail.com">poesitor1@gmail.com</a>
+                </address>
+            </header>
+            
             <h3>Skills</h3>
             <table border="1">
                 <thead>
@@ -88,20 +92,20 @@
                         <td>&mdash;</td>
                         <td>
                             <ul>
-                                <li>A simple shell</li>
+                                <li>A simple shell implementation</li>
                             </ul>
                         </td>
                     </tr>
                     <tr>
                         <td>Python</td>
                         <td>
-                            <ul type="square">
+                            <ul type="circle">
                                 <li>django &amp; DRF</li>
                                 <li>tkinter</li>
                             </ul>
                         </td>
                         <td>
-                            <ul type="square">
+                            <ul type="circle">
                                 <li>A simple Task manager app</li>
                                 <li>A book store api</li>
                                 <li>Structural analysis desktop application</li>
@@ -126,16 +130,20 @@
                     <tr>
                         <td>University of Lagos</td>
                         <td>Bsc. Civil engineering</td>
-                        <td>2016 - 2023</td>
+                        <td>
+                            <time datetime="2016">2016</time> - <time datetime="2023">2023</time>
+                        </td>
                     </tr>
                     <tr>
                         <td>Gomycode</td>
                         <td>Certified Software developer</td>
-                        <td>April 2025 - August 2025</td>
+                        <td>
+                            <time datetime="2025-04">April 2025</time> - <time datetime="2025-08">August 2025</time>
+                        </td>
                     </tr>  
                 </tbody>
             </table>
-        </section>
+        </article>
         <hr>
 
         <!-- contact section -->
