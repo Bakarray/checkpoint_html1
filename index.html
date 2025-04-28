@@ -8,19 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- description meta provides a short description of the page content to help search engines know what it contains -->
-    <meta name="description" content="A simple Portfolio page with html to demonstrate html knowledge">
+    <meta name="description" content="Abdulazeem Bakare's professional portfolio page, showcasing web development projects and skills">
+    <link rel="stylesheet" href="./styles.css">
 
     <title>Abdulazeem - Portfolio page</title>
 </head>
 <body>
     <header id="top">
         <a href="#top">
-            <img src="./bird_logo.jpg" alt="bird_logo" width="auto" height="100px">
+            <img src="./bird_logo.png" alt="bird_logo" width="auto" height="100px">
         </a>
 
         <nav>
             <ul type="none">
-                <li><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#resume">Resume</a></li>
@@ -31,15 +31,15 @@
 
     <main>
         <h1>Abdulazeem's Portfolio</h1>
-        <p>Scroll through to know me and see the wonderful programs I have created</p>
+        <p>Full stack web developer</p>
 
-        <figure>
+        <figure class="music">
             <audio controls loop>
                 <source src="./slowlife.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
             <figcaption>
-                Play music to keep you going. Source: <a href="https://www.bensound.com" target="_blank">bensound.com</a>
+                Play music to keep you going. <span class="music-source">Source: <a href="https://www.bensound.com" target="_blank">bensound.com</a></span>
                 <br>
             </figcaption>
         </figure>
@@ -51,7 +51,7 @@
             <p>Hello I am Abdulazeem Bakare, I love to create things that work, and I do that by making awesome software accessible to the wholeworld on the internet. That's why people call me a web developer</p>
 
             <figure>
-                <img src="./dev_image.jpg" alt="illustration of a developer in his element" height="300px">
+                <img src="./dev_image.png" alt="illustration of a developer in his element" height="300px">
                 <figcaption>An illustration of me as a developer interacting with my code</figcaption>
             </figure>
         </section>
@@ -62,7 +62,17 @@
             <h2>Work</h2>
             <p>Have a look at some of the projects I've worked on</p>
             
-            <div><!-- portfolio projects go here --></div>
+            <div class="portfolio-div">
+                <!-- portfolio projects go here -->
+                 
+            </div>
+            <div class="portfolio-div">
+                <a href="" class="project1"><div></div></a>
+                <a href="" class="project2"><div></div></a>
+                <a href="" class="project3"><div></div></a>
+                <a href="" class="project4"><div></div></a>
+                <a href="" class="project5"><div></div></a>
+            </div>
         </section>
         <hr>
 
@@ -91,7 +101,7 @@
                         <td>C</td>
                         <td>&mdash;</td>
                         <td>
-                            <ul>
+                            <ul type="none">
                                 <li>A simple shell implementation</li>
                             </ul>
                         </td>
@@ -99,13 +109,13 @@
                     <tr>
                         <td>Python</td>
                         <td>
-                            <ul type="circle">
+                            <ul type="none">
                                 <li>django &amp; DRF</li>
                                 <li>tkinter</li>
                             </ul>
                         </td>
                         <td>
-                            <ul type="circle">
+                            <ul type="none">
                                 <li>A simple Task manager app</li>
                                 <li>A book store api</li>
                                 <li>Structural analysis desktop application</li>
